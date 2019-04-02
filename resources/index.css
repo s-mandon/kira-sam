@@ -31,7 +31,6 @@ body {
     
 }
 
-/*Mockup had 6 columns - use 6 columns?*/
 .grid {
     display: grid;
     grid-template-columns: repeat(6, 8.79rem);
@@ -75,6 +74,7 @@ h3 {
      padding: 2.7rem;
  }
 
+ /*mobile / tablet nav - not needed here*/
  #menuToggle {
      display: none;
  }
@@ -190,6 +190,9 @@ hr {
 
 
   @media screen and (min-width: 370px) and (max-width: 1020px)  {
+      /* for all phones and tablets - design is simple enough to work 
+      without extra media queries */
+
     .grid {
 
         grid-template-columns: 90%;
@@ -298,10 +301,9 @@ hr {
       transform-origin: 0% 100%;
     }
     
-    /* 
-     * Transform all the slices of hamburger
-     * into a crossmark.
-     */
+    /* transform all the slices of hamburger
+      into a crossmark */
+
     #menuToggle input:checked ~ span
     {
       opacity: 1;
@@ -309,27 +311,24 @@ hr {
       background: #fff;
     }
     
-    /*
-     * But let's hide the middle one.
-     */
+    /* hide the middle one */
+
     #menuToggle input:checked ~ span:nth-last-child(3)
     {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
     
-    /*
-     * Ohyeah and the last one should go the other direction
-     */
+    /* the last one goes the other direction */
+    
     #menuToggle input:checked ~ span:nth-last-child(2)
     {
       transform: rotate(-45deg) translate(0, -1px);
     }
     
-    /*
-     * Make this absolute positioned
-     * at the top left of the screen
-     */
+    /* make this absolute positioned
+       at the top left of the screen */
+
     #menu
     {
       position: fixed;
@@ -356,9 +355,7 @@ hr {
         text-decoration: none;
     }
     
-    /*
-     * And let's slide it in from the left
-     */
+    /* to slide the menu in from the left */
     #menuToggle input:checked ~ ul
     {
       transform: none;
