@@ -28,40 +28,28 @@ body {
     text-align: center;
     padding-bottom: 3.89rem;
     padding-top: 3.54rem;
+    width: 900px;
+    margin: 0 auto;
     
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(6, 8.79rem);
-    grid-template-rows: 16.68rem 11.1rem 16.68rem 11.1rem 17.2rem 22.2rem 17.2rem 13.34rem 16.68rem;
-    height: auto;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    row-gap: 0.56rem;
-    column-gap: 0.8rem;
-    grid-template-areas:
-    "logo logo logo logo logo logo"
-    ". count count count count ."
-    ". address address address address ."
-    " . map map map map ."
-    ". how how where where ."
-    ". day day day day ."
-    ". food food food food ."
-    ". gifts gifts gifts gifts ."
-    ". addinfo addinfo addinfo addinfo ."
 }
 
 h2 {
     font-size: 1.5rem;
     padding: 2.7rem;
     text-transform: uppercase;
+    color: #268274;
 }
 
 h3 {
     font-size: 1.2rem;
     padding: 1.12rem;
+    text-transform: uppercase;
+    color: #268274;
+}
+
+h4 {
+    font-size: 1.5rem;
+    padding: 2.7rem;
     text-transform: uppercase;
 }
 
@@ -88,7 +76,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:#626262;
+    background:#458e78;
     width: 100%;
     height: 3.54rem;
     z-index: 2;
@@ -102,10 +90,19 @@ nav a {
     text-align: center;
 }
 
+.banner {
+    background-image: url("/resources/sg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    top: 3.54rem;
+}
+
 
 
 #rsvp1 {
-    background-color: #fff;
+    background-color: #eacf9b;
     width: 8.5rem;
     height: 2.61rem;
     border-radius: 0.278rem;
@@ -117,7 +114,7 @@ nav a {
 .logo {
     grid-area: logo;
     min-width: 300px;
-
+    color: #fff;
 }
 
 #countdown {
@@ -130,46 +127,18 @@ nav a {
     text-transform: uppercase;
     text-decoration: none;
     color: #626262;
-    border: solid #707070 1px;
+    background-color: #eacf9b;
     padding: 1.12rem 4.45rem;
     font-size: 1.23rem;
     border-radius: 0.278rem;
 }
 
-
-.address {
-    grid-area: address;
-    min-width: 300px;
+.split {
+    display: flex;
+    flex-wrap: no-wrap;
 }
 
-.where {
-    grid-area: where;
-    min-width: 300px;
-}
-
-.how {
-    grid-area: how;
-    min-width: 300px;
-}
-
-.the-day {
-    grid-area: day;
-    min-width: 300px;
-}
-
-.food {
-    grid-area: food;
-    min-width: 300px;
-}
-
-.addinfo {
-    grid-area: addinfo;
-    min-width: 300px;
-}
-
-.gifts {
-    grid-area: gifts;
-    align-self: start;
+.list {
     min-width: 300px;
 }
 
@@ -183,7 +152,7 @@ hr {
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #626262;
+    background-color: #268274;
     color: #fff;
     text-align: center;
   }
@@ -193,23 +162,13 @@ hr {
       /* for all phones and tablets - design is simple enough to work 
       without extra media queries */
 
-    .grid {
+.container {
+    max-width: 400px;
+}
 
-        grid-template-columns: 90%;
-        grid-template-rows: auto;
-        justify-content: center;
-        grid-template-areas:
-        "logo"
-        "count"
-        "address"
-        "map"
-        "how"
-        "where"
-        "day"
-        "food"
-        "gifts"
-        "addinfo"
-    }
+.split {
+    flex-wrap: wrap;
+}
 
     nav {
     z-index: 2;
