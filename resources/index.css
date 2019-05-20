@@ -28,7 +28,7 @@ body {
     text-align: center;
     padding-bottom: 3.89rem;
     padding-top: 3.54rem;
-    width: 900px;
+    width: 1004px;
     margin: 0 auto;
     
 }
@@ -67,18 +67,21 @@ h4 {
      display: none;
  }
 
+ .ncontainer {
+   width: 1004px;
+   display: flex;
+   justify-content: space-evenly;
+ }
+
 nav {
     position: fixed;
-    display: grid;
-    grid-template-columns: repeat(6, 154px);
-    grid-auto-rows: auto;
-    column-gap: 0.8rem;
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background:#458e78;
+    background:#268274;
     width: 100%;
-    height: 3.54rem;
+    height: 64px;
     z-index: 2;
  }
 
@@ -86,8 +89,8 @@ nav a {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    vertical-align: middle;
     text-align: center;
+    padding-top: 15px;
 }
 
 .banner {
@@ -99,26 +102,27 @@ nav a {
     top: 3.54rem;
 }
 
-
+.bcontainer {
+  width: 1004px;
+  margin: 0 auto;
+}
 
 #rsvp1 {
-    background-color: #eacf9b;
+    background-color: #89BAAF;
     width: 8.5rem;
     height: 2.61rem;
     border-radius: 0.278rem;
-    color: #626262;
+    color: #404040;
     text-align: center;
     padding-top: 0.75rem;
 }
 
 .logo {
-    grid-area: logo;
-    min-width: 300px;
-    color: #fff;
+  min-width: 300px;
+  color: #fff;
 }
 
 #countdown {
-    grid-area: count;
     min-width: 300px;
 }
 
@@ -126,8 +130,8 @@ nav a {
     width: 27.78rem;
     text-transform: uppercase;
     text-decoration: none;
-    color: #626262;
-    background-color: #eacf9b;
+    color: #404040;
+    background-color: #89BAAF;
     padding: 1.12rem 4.45rem;
     font-size: 1.23rem;
     border-radius: 0.278rem;
@@ -140,6 +144,12 @@ nav a {
 
 .list {
     min-width: 300px;
+}
+
+.address img {
+  max-width: 1004px;
+  min-width: 300px;
+  height: auto;
 }
 
 hr {
@@ -157,6 +167,10 @@ hr {
     text-align: center;
   }
 
+  #mobile-map {
+    display: none;
+  }
+
 
   @media screen and (min-width: 370px) and (max-width: 1020px)  {
       /* for all phones and tablets - design is simple enough to work 
@@ -164,6 +178,10 @@ hr {
 
 .container {
     max-width: 400px;
+}
+
+.bcontainer {
+  max-width: 400px;
 }
 
 .split {
@@ -195,7 +213,6 @@ hr {
     }
 
     #rsvp1 {
-        grid-area: nav;
         font-size: 15px;
         width: 94px;
         height: 33px;
@@ -203,6 +220,16 @@ hr {
         color: #626262;
         text-align: center;
         padding: 10px;
+        margin-left: 270px;
+    }
+
+    #desktop-map {
+      display: none;
+    }
+
+    #mobile-map {
+  display: block;
+  width: 400px;
     }
 
 
