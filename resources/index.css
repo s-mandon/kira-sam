@@ -122,8 +122,32 @@ nav a {
   color: #fff;
 }
 
-#countdown {
-    min-width: 300px;
+#clockdiv{
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div{
+  padding: 10px;
+  border-radius: 1px;
+  display: inline-block;
+}
+
+#clockdiv div > span{
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.smalltext{
+  padding-top: 5px;
+  font-size: 16px;
 }
 
 #rsvp2 {
@@ -182,6 +206,10 @@ hr {
 
 .bcontainer {
   max-width: 400px;
+}
+
+#countdown {
+  font-weight: 700;
 }
 
 .split {

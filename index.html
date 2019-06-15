@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>Kira & Sam</title>
 </head>
+<body>
 
-<body>  
     <nav>
         <div class="ncontainer">
         <a href="#" id="nav">Venue</a>
@@ -47,9 +47,16 @@
     <div class="logo">
         <div class="bcontainer">
         <img src="#" alt="kira&sam logo">
-        <h4>Saturday, 20th June 2020</h4>
-        <h4>Months | Days | Hours</h4>
-        <br><br>
+        <br>
+
+        <div id="clockdiv">
+    <div><span class="days"></span><div class="smalltext">DAYS</div></div>
+    <div><span class="hours"></span><div class="smalltext">HOURS</div></div>
+    <div><span class="minutes"></span><div class="smalltext">MINUTES</div></div>
+    <div><span class="seconds"></span><div class="smalltext">SECONDS</div></div>
+        </div>
+              
+        <br><br><br><br>
         <a href="#" id="rsvp2">RSVP</a>
         <br><br><br><br><br><hr>
     </div>
@@ -109,5 +116,6 @@
 
 </div></div>
 <div class="footer">Website built by Sarah Mandon</div>
+<script src="js/countdown.js"></script>
 </body>
 </html>
