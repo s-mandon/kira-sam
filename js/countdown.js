@@ -1,4 +1,4 @@
-var deadline = 'June 21 2020 00:00:00 GMT';
+var deadline = 'June 20 2020 00:00:00 GMT+1';
 function time_remaining(endtime){
   var t = Date.parse(endtime) - Date.parse(new Date());
   var minutes = Math.floor( (t/1000/60) % 60 );
@@ -17,7 +17,7 @@ function run_clock(id,endtime){
   function update_clock(){
     var t = time_remaining(endtime);
     
-  // update the numbers in each part of the clock
+    // update the numbers in each part of the clock
     days_span.innerHTML = t.days;
     hours_span.innerHTML = ('0' + t.hours).slice(-2);
     minutes_span.innerHTML = ('0' + t.minutes).slice(-2);
