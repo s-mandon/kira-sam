@@ -68,7 +68,7 @@ h4 {
  }
 
  .ncontainer {
-   width: 1004px;
+   width: 1006px;
    display: flex;
    justify-content: space-evenly;
  }
@@ -79,7 +79,6 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background:#268274;
     width: 100%;
     height: 64px;
     z-index: 2;
@@ -99,20 +98,20 @@ nav a {
     background-size: cover;
     text-align: center;
     position: relative;
-    top: 3.54rem;
 }
 
 .bcontainer {
-  width: 1004px;
+  width: 1006px;
   margin: 0 auto;
 }
 
 #rsvp1 {
-    background-color: #89BAAF;
+    background-color: rgba(0, 0, 0, 0.2);
     width: 8.5rem;
     height: 2.61rem;
+    border: 1px solid #fff;
     border-radius: 0.278rem;
-    color: #404040;
+    color: #fff;
     text-align: center;
     padding-top: 0.75rem;
 }
@@ -120,6 +119,10 @@ nav a {
 .logo {
   min-width: 300px;
   color: #fff;
+}
+
+.logo img {
+  max-width: 415px;
 }
 
 #countdown{
@@ -138,7 +141,7 @@ nav a {
 }
 
 #countdown div > span{
-  padding: 15px;
+  padding: 25px;
   border-radius: 5px;
   border: 1px solid #fff;
   background: rgba(0, 0, 0, 0.2);
@@ -146,8 +149,8 @@ nav a {
 }
 
 .smalltext{
-  padding-top: 5px;
-  font-size: 16px;
+  padding-top: 15px;
+  font-size: 18px;
 }
 
 #rsvp2 {
@@ -155,7 +158,7 @@ nav a {
     text-transform: uppercase;
     text-decoration: none;
     color: #404040;
-    background-color: #89BAAF;
+    background-color: #EFBE5E;
     padding: 1.12rem 4.45rem;
     font-size: 1.23rem;
     border-radius: 0.278rem;
@@ -167,7 +170,17 @@ nav a {
 }
 
 .list {
-    min-width: 300px;
+    max-width: 80%;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+#desktopline {
+  max-width: 100%;
+}
+
+#mobileline {
+  display: none;
 }
 
 .address img {
@@ -186,7 +199,7 @@ hr {
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #268274;
+    background-color: #277752;
     color: #fff;
     text-align: center;
   }
@@ -216,6 +229,16 @@ hr {
     flex-wrap: wrap;
 }
 
+#desktopline {
+  display: none;
+}
+
+#mobileline {
+  display: inline-block;
+}
+
+
+
     nav {
     z-index: 2;
     grid-template-columns: 1fr 1fr 1fr;
@@ -243,9 +266,9 @@ hr {
     #rsvp1 {
         font-size: 15px;
         width: 94px;
-        height: 33px;
+        height: 35px;
         border-radius: 0.278rem;
-        color: #626262;
+        color: #fff;
         text-align: center;
         padding: 10px;
         margin-left: 270px;
@@ -256,8 +279,8 @@ hr {
     }
 
     #mobile-map {
-  display: block;
-  width: 400px;
+    display: block;
+    max-width: 400px;
     }
 
 
