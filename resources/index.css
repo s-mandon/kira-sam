@@ -431,5 +431,20 @@ hr {
       padding: 0;
       width: 100%;
     }
+
+    #countdown {
+      font-size: 18px;
+    }
+
+    #countdown > div {
+      padding: 5px;
+    }
+
+    #countdown div > span{
+      padding: 15px;
 }
+.smalltext {
+  font-size: 13px;
+}
+  }
 
