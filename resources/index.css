@@ -215,6 +215,17 @@ hr {
     border-top: 1px solid #8c8b8b;
 }
 
+.mobileflower {
+  display: none;
+}
+
+.desktopflower {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .footer {
     position: absolute;
     right: 0;
@@ -231,7 +242,7 @@ hr {
   }
 
 
-  @media screen and (min-width: 300px) and (max-width: 1020px)  {
+  @media screen and (min-width: 300px) and (max-width: 800px)  {
       /* for all phones and tablets - design is simple enough to work 
       without extra media queries */
 
@@ -427,9 +438,14 @@ hr {
     }
 
     .mobileflower {
+      display: block;
       position: relative;
       padding: 0;
       width: 100%;
+    }
+
+    .desktopflower {
+      display: none;
     }
 
     #countdown {
