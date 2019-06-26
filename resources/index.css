@@ -19,7 +19,7 @@ html {
 body {
     position: relative;
     margin: 0;
-    padding-bottom: 6rem;
+    padding-bottom: 60px;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
     
@@ -30,7 +30,6 @@ body {
     position: relative;
     height: auto;
     text-align: center;
-    padding-bottom: 3.89rem;
     padding-top: 3.54rem;
     max-width: 700px;
     margin: 0 auto;
@@ -385,9 +384,9 @@ hr {
     #menu
     {
       position: fixed;
-      width: 230px;
+      width: 200px;
       margin: 17px 0 0 -50px;
-      background: #D9D9D9;
+      background: #277752;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       /* to stop flickering of text in safari */
@@ -398,20 +397,35 @@ hr {
     
     #menu li
     {
-      padding: 15px 50px ;
-      font-size: 22px;
-      color: #626262;
+      padding-left: 10px;
+      font-size: 20px;
+      color: #fff;
       text-transform: uppercase;
+    }
+
+    hr {
+      height:1px; 
+      border:none;
+      color:#fff; 
+      background-color:#fff; 
+      width:100%; 
     }
 
     #menu a {
         text-decoration: none;
+        padding: 0;
     }
     
     /* to slide the menu in from the left */
     #menuToggle input:checked ~ ul
     {
       transform: none;
+    }
+
+    .mobileflower {
+      position: relative;
+      padding: 0;
+      width: 100%;
     }
 }
 
