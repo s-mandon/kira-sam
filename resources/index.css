@@ -113,7 +113,7 @@ transition: 0.3s linear;
 }
 
 .banner {
-    background-image: url("/resources/bg.jpg");
+    background-image: url("https://i.imgur.com/iVpNFds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
