@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar-fixed-top">
         <div class="ncontainer">
-        <a href="#venue" id="nav">Venue</a>
+        <a href="#address" id="nav">Venue</a>
         <a href="#day" id="nav">The Day</a>
         <a href="#" id="rsvp1">RSVP</a>
         <a href="#food" id="nav">Food</a>
@@ -30,13 +30,13 @@
             <span></span>
             
             <ul id="menu">
-              <a href="#"><li>Nav1</li></a>
+              <a href="#address"><li>VENUE</li></a>
               <hr>
-              <a href="#"><li>Nav2</li></a>
+              <a href="#day"><li>THE DAY</li></a>
               <hr>
-              <a href="#"><li>Nav3</li></a>
+              <a href="#food"><li>FOOD</li></a>
               <hr>
-              <a href="#"><li>Nav4</li></a>
+              <a href="#gifts"><li>GIFTS</li></a>
               <hr>
               <a href="#"><li>Nav5</li></a>
             </ul>
@@ -66,7 +66,7 @@
 
     <div class="mcontainer">
     <img class="where" src="resources/where.png" alt="where">
-    <div class="address">
+    <div id="address">
         <p>SECRET GARDEN, THE COURT YARD, MERSHAM-LE-HATCH, HYTHE <br>
         ROAD, ASHFORD, TN25 5NH / TN25 6NH</p>
         <img id="desktop-map" src="https://i.imgur.com/dRcH1OL.png" alt="Map to venue">
@@ -111,7 +111,7 @@
         <img id="mobileline" src="resources/mobileline.png">
         <img id="desktopline" src="resources/line.png">
 <div class="list">
-        <img id="the-day" name="theader" src="resources/theday.png">
+        <img id="day" name="theader" src="resources/theday.png">
         <p>11:30am - Day guests arrive<br>
         12pm - Ceremony<br> 
         12:30pm - Reception drinks<br> 
@@ -147,5 +147,12 @@
     $(window).scroll(function(){
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
   });</script>
+  <script>$('.nav-link').click(function() {
+        var sectionTo = $(this).attr('href');
+        $('html, body').animate({
+          scrollTop: $(sectionTo).offset().top
+        }, 1500);
+    });
+      </script>
 </body>
 </html>

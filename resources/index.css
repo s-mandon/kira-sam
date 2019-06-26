@@ -12,7 +12,8 @@ html {
     color:#404040;
     min-width: 100%;
     height: 100%;
-    overflow: auto;
+      scroll-behavior: smooth;
+
 }
 
 body {
@@ -206,7 +207,7 @@ transition: 0.3s linear;
   max-width: 200px;
 }
 
-.address img {
+#address img {
   max-width: 1004px;
   min-width: 300px;
   height: auto;
