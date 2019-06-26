@@ -32,7 +32,7 @@ body {
     text-align: center;
     padding-bottom: 3.89rem;
     padding-top: 3.54rem;
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
     
 }
@@ -187,7 +187,6 @@ transition: 0.3s linear;
 
 .list {
     max-width: 664px;
-    min-width: 400px;
     margin: 0 auto;
 }
 
@@ -233,16 +232,14 @@ hr {
   }
 
 
-  @media screen and (min-width: 370px) and (max-width: 1020px)  {
+  @media screen and (min-width: 300px) and (max-width: 1020px)  {
       /* for all phones and tablets - design is simple enough to work 
       without extra media queries */
 
-.container {
-    max-width: 400px;
-}
+
 
 .bcontainer {
-  max-width: 400px;
+  max-width: 600px;
 }
 
 #countdown {
@@ -255,7 +252,7 @@ hr {
 
 #mobileline {
   display: inline-block;
-  min-width: 100%;
+  max-width: 100%;
 }
 
     nav {
