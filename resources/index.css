@@ -8,7 +8,8 @@ html {
     margin: 0;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-    color: #767676;
+    font-size: 18px;
+    color:#404040;
     min-width: 100%;
     height: 100%;
     overflow: auto;
@@ -28,7 +29,7 @@ body {
     text-align: center;
     padding-bottom: 3.89rem;
     padding-top: 3.54rem;
-    width: 1004px;
+    width: 700px;
     margin: 0 auto;
     
 }
@@ -53,13 +54,18 @@ h4 {
     text-transform: uppercase;
 }
 
+a {
+  color: #2BA2B7;
+}
+
  p {
      padding-bottom: 2.7rem;
      line-height: 1.12rem;
+     font-size: 18px;
  }
 
  img {
-     padding: 2.7rem;
+     padding: 30px;
  }
 
  /*mobile / tablet nav - not needed here*/
@@ -68,20 +74,25 @@ h4 {
  }
 
  .ncontainer {
-   width: 1006px;
+   width: 90%;
    display: flex;
    justify-content: space-evenly;
  }
 
+ .mcontainer {
+  width: 1004px;
+  margin: 0 auto;
+  text-align: center;
+ }
 nav {
     position: fixed;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
     width: 100%;
     height: 64px;
     z-index: 2;
+    padding-right: 50px;
  }
 
 nav a {
@@ -93,7 +104,7 @@ nav a {
 }
 
 .banner {
-    background-image: url("https://i.imgur.com/alcxkJY.jpg");
+    background-image: url("/resources/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -101,7 +112,7 @@ nav a {
 }
 
 .bcontainer {
-  width: 1006px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -122,7 +133,7 @@ nav a {
 }
 
 .logo img {
-  max-width: 415px;
+  max-width: 420px;
 }
 
 #countdown{
@@ -164,15 +175,14 @@ nav a {
     border-radius: 0.278rem;
 }
 
-.split {
-    display: flex;
-    flex-wrap: no-wrap;
-}
-
 .list {
-    max-width: 80%;
+    max-width: 664px;
     min-width: 400px;
     margin: 0 auto;
+}
+
+.list img {
+  max-width: 200px;
 }
 
 #desktopline {
@@ -181,6 +191,10 @@ nav a {
 
 #mobileline {
   display: none;
+}
+
+.where {
+  max-width: 200px;
 }
 
 .address img {
@@ -235,6 +249,7 @@ hr {
 
 #mobileline {
   display: inline-block;
+  min-width: 100%;
 }
 
 
