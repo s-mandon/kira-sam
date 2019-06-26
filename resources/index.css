@@ -237,12 +237,18 @@ hr {
     display: none;
   }
 
+  #rsvp3 {
+    display: none;
+  }
 
-  @media screen and (min-width: 300px) and (max-width: 800px)  {
+  .mncontainer {
+    display: none;
+  }
+
+
+  @media screen and (min-width: 300px) and (max-width: 700px)  {
       /* for all phones and tablets - design is simple enough to work 
       without extra media queries */
-
-
 
 .bcontainer {
   max-width: 600px;
@@ -289,14 +295,25 @@ hr {
         display: none;
     }
 
+    .mncontainer {
+      display: flex;
+      max-width: 100%;
+      padding: 0;
+    }
+
     #rsvp1 {
+      display: none;
+    }
+
+    #rsvp3 {
+        display: block;
         font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.2);
         width: 100px;
-        height: 35px;
         border-radius: 0.278rem;
-        color: #fff;
+        border: solid 1px #fff;
         text-align: center;
-        padding: 5px;
+        padding: 5px 10px;
         margin-left: 270px;
     }
 
@@ -408,6 +425,7 @@ hr {
     
     #menu li
     {
+      text-align: left;
       padding-left: 10px;
       font-size: 20px;
       color: #fff;
@@ -433,15 +451,10 @@ hr {
       transform: none;
     }
 
-    .mobileflower {
-      display: block;
-      position: relative;
-      padding: 0;
-      width: 100%;
-    }
+   
 
     .desktopflower {
-      display: none;
+      min-width: 100%;
     }
 
     #countdown {
