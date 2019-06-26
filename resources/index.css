@@ -254,6 +254,10 @@ hr {
   max-width: 100%;
 }
 
+.logo img {
+  max-width: 301px;
+}
+
     nav {
     z-index: 2;
     grid-template-columns: 1fr 1fr 1fr;
