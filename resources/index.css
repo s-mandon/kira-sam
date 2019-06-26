@@ -80,10 +80,11 @@ a {
  }
 
  .mcontainer {
-  width: 1004px;
+  max-width: 1004px;
   margin: 0 auto;
   text-align: center;
  }
+
 nav {
     position: fixed;
     display: flex;
@@ -239,10 +240,6 @@ hr {
   font-weight: 400;
 }
 
-.split {
-    flex-wrap: wrap;
-}
-
 #desktopline {
   display: none;
 }
@@ -251,8 +248,6 @@ hr {
   display: inline-block;
   min-width: 100%;
 }
-
-
 
     nav {
     z-index: 2;
@@ -294,8 +289,8 @@ hr {
     }
 
     #mobile-map {
-    display: block;
-    max-width: 400px;
+    display: inline-block;
+    max-width: 600px;
     }
 
 
