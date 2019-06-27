@@ -1,4 +1,13 @@
 
+h3 {
+	color: #fff;
+	font-size: 18px;
+	padding: 20px 0px 0px 0px;
+}
+
+.plus {
+	font-size: 14px;
+}
 
 .container-box
 {
@@ -74,6 +83,53 @@
 	background linear 0.5s;
 }
 
+.form-control {
+	width: 303px;
+	height: 38px;
+	border-radius: 3px;
+	border: solid 1px #707070;
+}
+
+
+.accept {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	float: left;
+	font-size: 16px;
+	width: 100px;
+	margin-top: 5px;
+	line-height: 1.2;
+}
+
+.decline {
+	position: relative;
+	display: flex;
+	float: right;
+	font-size: 16px;
+	width: 100px;
+	right: 30px;
+	margin: 5px;
+	line-height: 1.2;
+}
+
+input[type=radio] {
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
+	width: 50px;
+	height: 20px;
+	top: 10px;
+}
+
+label[for=accept] {
+	margin-left: 5px;
+}
+
+label[for=decline] {
+	margin-left: 5px;
+}
+
 .modal-content {
 	top: 70px;
 	width: 370px;
@@ -93,12 +149,13 @@
 	margin: 0 auto;
 	min-width: 370px;
 	border: none;
+	padding: 10px 0px 0px 60px;
 }
 
 .close {
 	color: #fff;
-	height: 50px;
-	width: 50px;
+	width: 100px;
+	opacity: 1;
 }
 
 .modal-body
