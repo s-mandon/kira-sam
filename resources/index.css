@@ -95,7 +95,6 @@ nav {
     width: 100%;
     height: 64px;
     z-index: 2;
-    padding-right: 50px;
     transition: 0.3s linear;
  }
 
@@ -238,6 +237,10 @@ hr {
     display: none;
   }
 
+  #mob-button {
+    display: none;
+  }
+
   #rsvp3 {
     display: none;
   }
@@ -327,6 +330,17 @@ hr {
     max-width: 600px;
     }
 
+    #desk-button {
+      display: none;
+    }
+
+    #mob-button {
+      display: inline-block;
+    }
+
+    #mob-but-container {
+      padding-left: 250px;
+    }
 
     #menuToggle
     {
