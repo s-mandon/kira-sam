@@ -75,8 +75,10 @@
 }
 
 .modal-content {
+	top: 70px;
 	width: 370px;
 	margin: 0 auto;
+	background: #277752;
 }
 
 .modal-backdrop {
@@ -89,7 +91,8 @@
 	color: #fff;
 	font-size: 26px;
 	margin: 0 auto;
-	width: 370px;
+	min-width: 370px;
+	border: none;
 }
 
 .close {
@@ -100,17 +103,28 @@
 
 .modal-body
 {
-	height: auto;
+	height: 600px;
 	width: 370px;
 	background: #277752;	
 	font-size: 18px;
 	color: #fff;
 	margin: 0 auto;
-}
+	max-height: calc(100vh - 200px);
+	overflow-y: scroll;
+	}
 
-.modal-content h3 {
-	color: #fff;
-}
+.modal-body::-webkit-scrollbar {
+		width: 5px;
+	}
+	 
+.modal-body::-webkit-scrollbar-track {
+		
+	}
+	 
+.modal-body::-webkit-scrollbar-thumb {
+	  background-color: #fff;
+	  outline: 1px solid slategrey;
+	}
 
 
 

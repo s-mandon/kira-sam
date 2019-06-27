@@ -3,6 +3,19 @@
     box-sizing: border-box;   
   }
 
+  body::-webkit-scrollbar {
+		width: 10px;
+	}
+	 
+	body::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
+	 
+	body::-webkit-scrollbar-thumb {
+	  background-color: darkgrey;
+	  outline: 1px solid slategrey;
+	}
+
 
 html {
     margin: 0;
