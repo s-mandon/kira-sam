@@ -4,10 +4,8 @@
 {
 	position: relative;
 	display:inline-block; 
-	padding: 10px; 
+	padding-bottom: 30px;
 	left: 0;
-	bottom: 100px;
-
 }
 
 
@@ -16,13 +14,74 @@
 	background: #EFBE5E;
 	color: #404040;
 	margin: 0 auto;
-	width: 200px;
+	width: 223px;
+	height: 68px;
 	
+}
+
+.btn-2 {
+	display: inline-block;
+	background: rgba(0,0,0,.2);
+	color: #fff;
+	margin: 0 auto;
+	width: 154px;
+	height: 47px;
+	font-size: 18px;
+	border: solid 1px #fff;
+	
+}
+
+.btn-info-2 {
+	border-color: #fff;
+	transition: color linear 0.5s,
+	background linear 0.5s,
+	border linear 0.5s;
+}
+
+.btn-info-2:hover {
+	background: #fff;
+	border: #fff;
+	color: #404040;
+	transition: color linear 0.5s,
+	background linear 0.5s;
+}
+
+.btn-2:focus,.btn-2:active {
+	outline: none !important;
+	box-shadow: none;
+ }
+
+.btn-info-2:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0,0,0,.2);
+}
+
+.btn-info:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0,0,0,.2);
+}
+
+.btn-info {
+	border-color: #EFBE5E;
+	transition: color linear 0.5s,
+	background linear 0.5s,
+	border linear 0.5s;
+}
+
+.btn-info:hover {
+	background: #277752;
+	border: #277752;
+	color: #fff;
+	transition: color linear 0.5s,
+	background linear 0.5s;
 }
 
 .modal-content {
 	width: 370px;
 	margin: 0 auto;
+}
+
+.modal-backdrop {
+	z-index: 0;
+	
 }
 
 .modal-header {
@@ -39,7 +98,6 @@
 	width: 50px;
 }
 
-
 .modal-body
 {
 	height: auto;
@@ -50,7 +108,7 @@
 	margin: 0 auto;
 }
 
-h3 {
+.modal-content h3 {
 	color: #fff;
 }
 

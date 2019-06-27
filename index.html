@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./resources/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./resources/form.css">
     <script src="./js/form.js"></script>
     <title>Kira & Sam</title>
@@ -15,9 +18,68 @@
 <body>
     <nav class="navbar-fixed-top">
         <div class="ncontainer">
-        <a href="#address" id="nav">Venue</a>
-        <a href="#day" id="nav">The Day</a>
-        <a href="#" id="rsvp1">RSVP</a>
+                <a href="#address" id="nav">Venue</a>
+                <a href="#day" id="nav">The Day</a>
+                <div class="container-box-2">
+                    <button type="button" class="btn-2 btn-info-2 btn-lg turned-button" data-toggle="modal" data-target="#myModal">RSVP</button>
+                </div>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                RSVP
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" method="post" id="reused_form" >
+                                    <p> Please respond once per individual invited, not per party. <br>
+                                    If you have any issues with this form, you can also RSVP by emailing samkiramj@gmail.com </p>
+                                    <div class="form-group">
+                                        <label for="name"> NAME:</label>
+                                        <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"> EMAIL:</label>
+                                        <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="radio" id="accept" name="decaccept" checked>
+                                    <label for="accept">HAPPILY ACCEPT</label>
+                                    </div>
+                                    <div class="form-group">
+                                    <input type="radio" id="decline" name="decaccept">
+                                    <label for="accept">SADLY DECLINE</label>
+                                    </div>
+                                    <h3>WOULD YOU LIKE A +1?</h3>
+                                    <p>We can't guarantee +1s, but let us know if you'd like one and we'll let you know
+                                         once we've had all our RSVPs.
+                                    </p>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="oneyes" name="oneyes"
+                                               checked>
+                                        <label for="oneyes">YES PLEASE</label>
+                                      </div>
+                                    
+                                    <div class="form-group">
+                                        <h3>ANY DIETARY REQUIREMENTS?</h3>
+                                        <label for="name"> Message:</label>
+                                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Vegetatian, vegan, gluten free, any allergies or intolerances?" maxlength="6000" rows="7"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                            <h3>ADD A SONG TO OUR PLAYLIST</h3>
+                                            <label for="name"> Message:</label>
+                                            <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Or more than one if you can't decide!" maxlength="6000" rows="7"></textarea>
+                                        </div>
+                                    <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! &rarr;</button>
+                                </div>
+                                </form>
+                                <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                            </div>
+                        </div>
+                    </div>
         <a href="#food" id="nav">Food</a>
         <a href="#gifts" id="nav">Gifts</a>
     </div>
@@ -62,7 +124,6 @@
         </div>
     </div>
               
-        <br><br><br><br>
         <div class="container">
             <div class="container-box">
                 <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">RSVP</button>
@@ -205,10 +266,6 @@
 <img class="mobileflower" src="resources/Component 14 – 2.png">
 <div class="footer">Website built by Sarah Mandon</div>
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/countdown.js"></script>
 <script>
     $(window).scroll(function(){
