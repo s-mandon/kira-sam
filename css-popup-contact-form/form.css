@@ -1,0 +1,61 @@
+
+
+.container-box
+{
+	position: relative;
+	display:inline-block; 
+	padding: 10px; 
+	left: 0;
+	bottom: 100px;
+
+}
+
+
+.btn {
+	display: inline-block;
+	background: #EFBE5E;
+	color: #404040;
+	margin: 0 auto;
+	width: 200px;
+	
+}
+
+.modal-content {
+	width: 370px;
+	margin: 0 auto;
+}
+
+.modal-header {
+	background: #277752;
+	color: #fff;
+	font-size: 26px;
+	margin: 0 auto;
+	width: 370px;
+}
+
+.close {
+	color: #fff;
+	height: 50px;
+	width: 50px;
+}
+
+
+.modal-body
+{
+	height: auto;
+	width: 370px;
+	background: #277752;	
+	font-size: 18px;
+	color: #fff;
+	margin: 0 auto;
+}
+
+h3 {
+	color: #fff;
+}
+
+
+
+
+
+
