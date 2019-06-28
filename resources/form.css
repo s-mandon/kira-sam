@@ -271,6 +271,17 @@ body.modal-open {
 			width: 100%;
 		}
 
+		.close {
+			color: #fff !important;
+			width: 100px;
+			opacity: 1;
+		}
+		
+		.close:hover {
+			color: #fff;
+			opacity: 1;
+		}
+
 
 
 
