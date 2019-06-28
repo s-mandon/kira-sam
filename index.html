@@ -47,14 +47,15 @@
                                         <input type="email" class="form-control" id="email" name="email" required maxlength="50">
                                     </div>
                                     <div class="accept">
-                                        <input type="radio" id="accept" name="decaccept" checked>
-                                    <label for="accept">HAPPILY ACCEPT</label>
+                                    <input type="radio" value="yes" id="accept" name="decaccept" data-toggle="collapse" data-target="#collapseOne" checked>
+                                    <lable for="accept">HAPPILY ACCEPT</lable>
                                     </div>
                                     <div class="decline">
-                                    <input type="radio" id="decline" name="decaccept">
-                                    <label for="accept">SADLY DECLINE</label>
+                                    <input type="radio" value="no" id="decline" name="decaccept" data-toggle="collapse" data-target="#collapseOne">
+                                    <label for="decline"></label>SADLY DECLINE</label>
                                     </div>
                                     <br><br><br>
+                                    <div class="collapse show" id="collapseOne">
                                     <div class="plusone">
                                     <h3>WOULD YOU LIKE A +1?</h3>
                                     <p class="plus">We can't guarantee +1s, but let us know if you'd like one and we'll let you know
@@ -73,20 +74,23 @@
                                             <label for="name">ADD A SONG TO OUR PLAYLIST!</label>
                                             <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Or more than one if you can't decide!" maxlength="6000" rows="7"></textarea>
                                         </div>
+                                    </div>
                                         <div class="subbut">
                                     <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">SUBMIT</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
+        
                                 </form>
                                 <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
                                 <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
                             </div>
                         </div>
-                    </div>
         <a href="#food" id="nav">Food</a>
         <a href="#gifts" id="nav">Gifts</a>
     </div>
+</div>
     </nav>
 
 <!--mobile / tablet nav-->
