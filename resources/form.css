@@ -198,7 +198,7 @@ body.modal-open {
 
 .modal-container {
 	position: relative;
-	max-width: 310px;
+	width: 320px;
 	margin: 0 auto;
 }
 
@@ -209,12 +209,12 @@ body.modal-open {
 
 .modal-header {
 	background: #277752;
+	border: 1px solid #fff;
 	color: #fff;
 	font-size: 26px;
 	margin: 0 auto;
-	min-width: 370px;
+	width: 370px;
 	border: none;
-	padding: 20px 0px 20px 60px;
 }
 
 .close {
