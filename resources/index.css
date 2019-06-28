@@ -123,6 +123,9 @@ nav a {
 nav.scrolled {
 background: #277752;
 transition: 0.3s linear;
+-webkit-box-shadow: 0 1px 6px 8px #383838;
+-moz-box-shadow: 0 8px 6px 8px #383838;
+box-shadow: 0 0px 5px 0px #383838;
 }
 
 .banner {
@@ -446,10 +449,10 @@ hr {
 
     #menu
     {
+      z-index: 1;
       position: fixed;
       width: 120px;
       height: 220px;
-      font-weight: bold;
       border-radius: 1px;
       margin: 17px 0 0 -50px;
       background:transparent;
@@ -474,6 +477,9 @@ hr {
    #menu.scrolled {
       background: #277752;
       transition: 0.3s linear;
+      -webkit-box-shadow: inset 0px 8px 12px -3px rgba(56,56,56,1);
+      -moz-box-shadow: inset 0px 8px 12px -3px rgba(56,56,56,1);
+      box-shadow: inset 0px 8px 12px -3px rgba(56,56,56,1);
       }
 
 
