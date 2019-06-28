@@ -332,6 +332,10 @@
     $(window).scroll(function(){
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
   });</script>
+  <script>
+        $(window).scroll(function(){
+        $('#menu').toggleClass('scrolled', $(this).scrollTop() > 100);
+      });</script>
   <script>$('.nav-link').click(function() {
         var sectionTo = $(this).attr('href');
         $('html, body').animate({
