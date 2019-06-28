@@ -2,11 +2,15 @@
 h3 {
 	color: #fff;
 	font-size: 18px;
-	padding: 20px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 }
 
 .plus {
 	font-size: 14px;
+}
+
+p.respond {
+	padding-bottom: 20px;
 }
 
 .container-box
@@ -90,6 +94,16 @@ h3 {
 	border: solid 1px #707070;
 }
 
+.form-group {
+	margin-top: 30px;
+}
+
+textarea#message.form-control {
+	width: 303px;
+	height: 82px;
+	font-size: 14px;
+}
+
 
 .accept {
 	position: relative;
@@ -113,11 +127,32 @@ h3 {
 	line-height: 1.2;
 }
 
+label[for=oneyes] {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	float: right;
+	font-size: 16px;
+	width: 300px;
+	bottom: 10px;
+	margin-bottom: 20px;
+	line-height: 1.2;
+}
+
 input[type=radio] {
 	display: flex;
 	flex-wrap: nowrap;
 	position: relative;
 	width: 50px;
+	height: 20px;
+	top: 10px;
+}
+
+input[type=checkbox] {
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
+	width: 20px;
 	height: 20px;
 	top: 10px;
 }
@@ -130,11 +165,36 @@ label[for=decline] {
 	margin-left: 5px;
 }
 
+button[type=submit] {
+	background: #277752;
+	border: 1px #fff solid;
+	width: 154px;
+	height: 47px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.subbut {
+	text-align: center;
+	width: 300px;
+	padding: 20px;
+}
+
+p.plus {
+	padding: 0;
+}
+
 .modal-content {
 	top: 70px;
 	width: 370px;
 	margin: 0 auto;
 	background: #277752;
+}
+
+.modal-container {
+	position: relative;
+	max-width: 310px;
+	margin: 0 auto;
 }
 
 .modal-backdrop {
@@ -149,7 +209,7 @@ label[for=decline] {
 	margin: 0 auto;
 	min-width: 370px;
 	border: none;
-	padding: 10px 0px 0px 60px;
+	padding: 20px 0px 20px 60px;
 }
 
 .close {
@@ -160,7 +220,7 @@ label[for=decline] {
 
 .modal-body
 {
-	height: 600px;
+	height: 700px;
 	width: 370px;
 	background: #277752;	
 	font-size: 18px;
@@ -183,6 +243,10 @@ label[for=decline] {
 	  outline: 1px solid slategrey;
 	}
 
+	@media screen and (min-width: 300px) and (max-width: 700px)  {
+		.modal-body {
+			text-align: left;
+		}
 
 
 
