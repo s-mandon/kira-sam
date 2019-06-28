@@ -180,6 +180,10 @@ button[type=submit] {
 	padding: 20px;
 }
 
+button[type=submit]:hover {
+	background-color: #EFBE5E;
+}
+
 p.plus {
 	padding: 0;
 }
@@ -220,6 +224,11 @@ body.modal-open {
 .close {
 	color: #fff;
 	width: 100px;
+	opacity: 1;
+}
+
+.close:hover {
+	color: #fff;
 	opacity: 1;
 }
 
