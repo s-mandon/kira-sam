@@ -186,7 +186,7 @@ p.plus {
 
 .modal-content {
 	top: 70px;
-	width: 370px;
+	max-width: 370px;
 	margin: 0 auto;
 	background: #277752;
 }
@@ -249,8 +249,17 @@ body.modal-open {
 	}
 
 	@media screen and (min-width: 300px) and (max-width: 700px)  {
+
+		.modal-container {
+		width: 100%;
+		}
 		.modal-body {
 			text-align: left;
+			width: 100%;
+		}
+
+		.modal-header {
+			width: 100%;
 		}
 
 
