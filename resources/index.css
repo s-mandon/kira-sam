@@ -477,9 +477,9 @@ hr {
    #menu.scrolled {
       background: #277752;
       transition: 0.3s linear;
-      -webkit-box-shadow: inset 0px 8px 12px -3px rgba(56,56,56,1);
-      -moz-box-shadow: inset 0px 8px 12px -3px rgba(56,56,56,1);
-      box-shadow: inset 0px 8px 12px -3px rgba(56,56,56,1);
+      -webkit-box-shadow: inset 0px 4px 12px -3px rgba(56,56,56,1);
+      -moz-box-shadow: inset 0px 4px 12px -3px rgba(56,56,56,1);
+      box-shadow: inset 0px 4px 12px -3px rgba(56,56,56,1);
       }
 
 
