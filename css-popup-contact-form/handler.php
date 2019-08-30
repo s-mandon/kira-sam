@@ -21,6 +21,23 @@ $validator->field('message')->maxLength(6000);
 
 
 
-$pp->mail('sarahmandon@outlook.com','Subject','RSVP'); // ← Your email here
+$pp->mail('sarahmandon@outlook.com'); // ← Your email here
 
 echo $pp->process($_POST);
+?>
+
+<?php
+// the message
+$msg = "First line of text\nSecond line of text";
+
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+$header = "From: samuel.leahy12@gmail.com";
+
+// send email
+if(!mail("sarahmandon@outlook.com","RSVP",$msg,$header)){
+    var_dump(error_get_last()['message']);
+} else {
+    echo "Hello";
+}
+?>
