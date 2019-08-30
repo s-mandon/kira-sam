@@ -175,6 +175,7 @@
   }
 
   #countdown{
+  padding-top: 10px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
   display: inline-block;
@@ -216,8 +217,21 @@
   display: none;
   }
 
-  .where {
-  max-width: 200px;
+  .wheretext {
+  max-width: 180px;
+  padding-top: 40px;
+  }
+
+  .daytext {
+    max-width: 130px;
+  }
+
+  .foodtext {
+    max-width: 80px;
+  }
+
+  .giftstext {
+    max-width: 90px;
   }
 
   #address img {
