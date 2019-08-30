@@ -52,21 +52,21 @@
     font-size: 22px;
     padding: 50px 0px 10px 0px;
     text-transform: uppercase;
-    color: #268274;
+    color: #277752;
     }
 
   h2 {
   font-size: 22px;
   padding: 30px;
   text-transform: uppercase;
-  color: #268274;
+  color: #277752;
   }
 
   h3 {
   font-size: 1.2rem;
   padding: 20px;
   text-transform: uppercase;
-  color: #268274;
+  color: #277752;
   }
 
   h4 {
@@ -191,7 +191,7 @@
   margin: 0 auto;
   }
 
-  #desktopline {
+  .desktopline {
   max-width: 100%;
   }
 
@@ -440,7 +440,7 @@
   height: 220px;
   border-radius: 1px;
   margin: 17px 0 0 -50px;
-  background:transparent;
+  background:#277752;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
