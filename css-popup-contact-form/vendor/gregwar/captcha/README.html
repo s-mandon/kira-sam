@@ -1,0 +1,84 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="captcha">Captcha</h1>
+<p><img src="http://gregwar.com/captchas.png" alt="Captchas examples">
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YUXRLWHQSWS6L"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal"></a></p>
+<h1 id="installation">Installation</h1>
+<p>With composer :</p>
+<pre><code class="lang-json">{
+    ...
+    &quot;require&quot;: {
+        &quot;gregwar/captcha&quot;: &quot;1.*&quot;
+    }
+}
+</code></pre>
+<h1 id="usage">Usage</h1>
+<p>You can create a captcha with the <code>CaptchaBuilder</code> :</p>
+<pre><code class="lang-php">&lt;?php
+
+use Gregwar\Captcha\CaptchaBuilder;
+
+$builder = new CaptchaBuilder;
+$builder-&gt;build();
+</code></pre>
+<p>You can then save it to a file :</p>
+<pre><code class="lang-php">&lt;?php
+
+$builder-&gt;save(&#39;out.jpg&#39;);
+</code></pre>
+<p>Or output it directly :</p>
+<pre><code class="lang-php">&lt;?php
+
+header(&#39;Content-type: image/jpeg&#39;);
+$builder-&gt;output();
+</code></pre>
+<p>Or inline it directly in the HTML page:</p>
+<pre><code class="lang-php">&lt;img src=&quot;&lt;?php echo $builder-&gt;inline(); ?&gt;&quot; /&gt;
+</code></pre>
+<p>You&#39;ll be able to get the code and compare it with a user input :</p>
+<pre><code class="lang-php">&lt;?php
+
+// Example: storing the phrase in the session to test for the user 
+// input later
+$_SESSION[&#39;phrase&#39;] = $builder-&gt;getPhrase();
+</code></pre>
+<p>You can compare the phrase with user input:</p>
+<pre><code class="lang-php">if($builder-&gt;testPhrase($userInput)) {
+    // instructions if user phrase is good
+}
+else {
+    // user phrase is wrong
+}
+</code></pre>
+<h1 id="api">API</h1>
+<p>You can use theses functions :</p>
+<ul>
+<li><strong>__construct($phrase = null)</strong>, constructs the builder with the given phrase, if the phrase is null, a random one will be generated</li>
+<li><strong>getPhrase()</strong>, allow you to get the phrase contents</li>
+<li><strong>setDistortion($distortion)</strong>, enable or disable the distortion, call it before <code>build()</code></li>
+<li><strong>isOCRReadable()</strong>, returns <code>true</code> if the OCR can be read using the <code>ocrad</code> software, you&#39;ll need to have shell_exec enabled, imagemagick and ocrad installed</li>
+<li><strong>buildAgainstOCR($width = 150, $height = 40, $font = null)</strong>, builds a code until it is not readable by <code>ocrad</code></li>
+<li><strong>build($width = 150, $height = 40, $font = null)</strong>, builds a code with the given $width, $height and $font. By default, a random font will be used from the library</li>
+<li><strong>save($filename, $quality = 80)</strong>, saves the captcha into a jpeg in the $filename, with the given quality</li>
+<li><strong>get($quality = 80)</strong>, returns the jpeg data</li>
+<li><strong>output($quality = 80)</strong>, directly outputs the jpeg code to a browser</li>
+<li><strong>setBackgroundColor($r, $g, $b)</strong>, sets the background color to force it (this will disable many effects and is not recommended)</li>
+<li><strong>setBackgroundImages(array($imagepath1, $imagePath2))</strong>, Sets custom background images to be used as captcha background. It is recommended to disable image effects when passing custom images for background (ignore_all_effects). A random image is selected from the list passed, the full paths to the image files must be passed.</li>
+<li><strong>setInterpolation($interpolate)</strong>, enable or disable the interpolation (enabled by default), disabling it will be quicker but the images will look uglier</li>
+<li><strong>setIgnoreAllEffects($ignoreAllEffects)</strong>, disable all effects on the captcha image. Recommended to use when passing custom background images for the captcha.</li>
+<li><strong>testPhrase($phrase)</strong>, returns true if the given phrase is good</li>
+<li><strong>setMaxBehindLines($lines)</strong>, sets the maximum number of lines behind the code</li>
+<li><strong>setMaxFrontLines($lines)</strong>, sets the maximum number of lines on the front of the code</li>
+</ul>
+<h1 id="symfony-2-bundle">Symfony 2 Bundle</h1>
+<p>You can have a look at the following repository to enjoy the Symfony 2 bundle packaging this captcha generator :
+<a href="https://github.com/Gregwar/CaptchaBundle">https://github.com/Gregwar/CaptchaBundle</a></p>
+<h1 id="license">License</h1>
+<p>This library is under MIT license, have a look to the <code>LICENSE</code> file</p>
+
+      </body>
+    </html>

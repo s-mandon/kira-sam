@@ -1,0 +1,39 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="phpformvalidator">PHPFormValidator</h1>
+<p>A PHP Library for &#39;self-documenting&#39; server side Form Validations.</p>
+<p>A typical usage would be like this:</p>
+<pre><code class="lang-php">use FormGuide\PHPFormValidator\FormValidator;
+
+$validator = FormValidator::create();
+
+$validator-&gt;fields([&#39;name&#39;,&#39;email&#39;])-&gt;areRequired()-&gt;maxLength(50);
+$validator-&gt;field(&#39;email&#39;)-&gt;isEmail();
+
+if(!$validator-&gt;test($_POST))
+{
+    return json_encode($validator-&gt;getErrors(true));
+}
+
+</code></pre>
+<h2 id="installation-using-composer">Installation using composer</h2>
+<pre><code>composer require FormGuide/PHPFormValidator
+
+</code></pre><h2 id="declaring-validations-for-single-fields">Declaring validations for single fields</h2>
+<pre><code class="lang-php">$validator-&gt;field(&#39;email&#39;)-&gt;isEmail()-&gt;isRequired();
+</code></pre>
+<h2 id="declaring-validations-for-multiple-fields">Declaring validations for multiple fields</h2>
+<pre><code class="lang-php">$validator-&gt;fields([&#39;name&#39;,&#39;email&#39;])-&gt;areRequired()-&gt;maxLength(50);
+</code></pre>
+<p>This is equivalent to:</p>
+<pre><code class="lang-php">$validator-&gt;field(&#39;name&#39;)-&gt;isRequired()-&gt;maxLength(50);
+
+$validator-&gt;field(&#39;email&#39;)-&gt;isRequired()-&gt;maxLength(50);
+</code></pre>
+
+      </body>
+    </html>
