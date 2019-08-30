@@ -35,8 +35,6 @@
   padding-bottom: 60px;
   min-height: 100%;
   font-family: 'Montserrat', sans-serif;
-
-
   }
 
   .container {
@@ -78,6 +76,16 @@
   a {
   color: #2BA2B7;
   text-decoration: underline;
+  }
+
+  nav a {
+    transition: color 0.2s linear;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+    color: #EFBE5E;
+    transition: color 0.2s linear;
   }
 
   p {

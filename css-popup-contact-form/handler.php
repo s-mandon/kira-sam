@@ -21,6 +21,6 @@ $validator->field('message')->maxLength(6000);
 
 
 
-$pp->sendEmailTo('sarahmandon@hotmail.co.uk'); // ← Your email here
+$pp->mail('sarahmandon@outlook.com','Subject','RSVP'); // ← Your email here
 
 echo $pp->process($_POST);
