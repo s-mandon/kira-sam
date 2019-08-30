@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -9,28 +10,29 @@
     <link rel="stylesheet" type="text/css" href="./resources/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./resources/form.css">
     <script src="./js/form.js"></script>
     <title>Kira & Sam</title>
 </head>
+
 <body>
     <nav class="navbar-fixed-top">
         <div class="ncontainer">
-                <a href="#address" id="nav">Venue</a>
-                <a href="#day" id="nav">The Day</a>
-                <div class="container-box-2">
-                    <button type="button" id="desk-button" class="btn-2 btn-info-2 btn-lg turned-button" data-toggle="modal" data-target="#myModal">RSVP</button>
-                </div>
-                <!-- Modal -->
-                <div id="myModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-container">
-                                <div class="modal-header">
-                            <h5 class="col-12 modal-title text-center">
+            <a href="#address" id="nav">Venue</a>
+            <a href="#day" id="nav">The Day</a>
+            <div class="container-box-2">
+                <button type="button" id="desk-button" class="btn-2 rsvp1 btn-info-2 btn-lg turned-button" data-toggle="modal" data-target="#myModal">RSVP</button>
+            </div>
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <h5 class="col-12 modal-title text-center">
                                 RSVP
                                 <button type="button" class="close" data-dismiss="modal">✖</button>
                             </div>
@@ -57,14 +59,14 @@
                                     <br><br><br>
                                     <div class="collapse show" id="collapseOne">
                                     <div class="plusone">
-                                    <h3>WOULD YOU LIKE A +1?</h3>
+                                    <h3 class="formh3">WOULD YOU LIKE A +1?</h3>
                                     <p class="plus">We can't guarantee +1s, but let us know if you'd like one and we'll let you know
                                          once we've had all our RSVPs.
                                     </p>
                                         <input type="checkbox" id="oneyes" name="oneyes">
                                         <label for="oneyes">YES PLEASE</label>
                                       </div>
-                                    
+
                                     <div class="form-group">
                                         <label for="name">ANY DIETARY REQUIREMENTS?</label>
                                         <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Vegetarian, vegan, gluten free, any allergies or intolerances?" maxlength="6000" rows="7"></textarea>
@@ -80,7 +82,7 @@
                                     </div>
                                 </div>
                             </div>
-        
+
                                 </form>
                                 <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
                                 <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
@@ -135,7 +137,7 @@
                                            checked>
                                     <label class="oneyes" for="oneyes">YES PLEASE</label>
                                   </div>
-                                
+
                                 <div class="form-group">
                                     <label for="name">ANY DIETARY REQUIREMENTS?</label>
                                     <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Vegetarian, vegan, gluten free, any allergies or intolerances?" maxlength="6000" rows="7"></textarea>
@@ -157,7 +159,7 @@
             <span></span>
             <span></span>
             <span></span>
-            
+
             <ul id="menu">
             <br>
               <a href="#address"><li>VENUE</li></a>
@@ -187,11 +189,11 @@
         </div>
         </div>
     </div>
-              
+
         <div class="container">
             <br>
             <div class="container-box">
-                <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">RSVP</button>
+                <button type="button" class="btn rsvp2 btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">RSVP</button>
             </div>
             <!-- Modal -->
             <div id="myModal" class="modal fade" role="dialog">
@@ -231,7 +233,7 @@
                                            checked>
                                     <label for="oneyes">YES PLEASE</label>
                                   </div>
-                                
+
                                 <div class="form-group">
                                     <h3>ANY DIETARY REQUIREMENTS?</h3>
                                     <label for="name"> Message:</label>
@@ -251,9 +253,8 @@
                     </div>
                 </div>
             </div>
-            <br><br><br>
         </div>
-        
+
     <div class="mcontainer">
     <img class="where" src="resources/where.png" alt="where">
     <div id="address">
@@ -262,21 +263,21 @@
         <img id="desktop-map" src="https://i.imgur.com/dRcH1OL.png" alt="Map to venue">
         <img id="mobile-map" src="resources/mobilemap.png" alt="Map to venue">
     </div>
-</div>
-    
+</div>   
+
     <div class="container">
     <div class="list">
-        <h3 id="how">How To Get There</h3>
+        <h2 id="how">How To Get There</h2>
         <p>BY CAR: <br>FROM LONDON: Follow the M20, leaving junction 10, take 2nd exit onto the A20 Hythe Road. Go straight over little roundabout next to a Tesco. Follow A20 for approx. 1.6 miles. The venue is on the left hand side, you will see a sign for The Court Yard. 
         <br>FROM FOLKESTONE: Follow the M20, leaving at junction 11, take 3rd exit onto the A20. Follow the road for approx. 4 miles. You will go through the village of Sellindge. The venue is on the right hand side, you will see a sign for The Court Yard. 
         <br>Sat navs do not always send you to the right place, this is why there are two postcodes. 
         <br><br>BY TRAIN:<br> The nearest train station is Ashford International, which is approx. a 15 minute car journey away (5 miles). 
         <br><br>BY BUS:<br> Number 10/10A - Ashford to Folkestone - Nearest Stop is Mersham Turn. 
-        <br><br>LOCAL TAXIS:<br> Arrow Taxis - 01233 666666 <br>Arrow Taxis - 01233 666666 <br>Arrow Taxis - 01233 666666 <br>Arrow Taxis - 01233 666666 <br>Arrow Taxis - 01233 666666</p>
+        <br><br>LOCAL TAXIS:<br> Arrow Taxis - 01233 666666 <br>Ashford Taxis - 01233 888888 <br>Unique Taxis - 01233 367368 <br>King Taxi Ashford - 01233 367357 <br>Elegant Taxis - 01233 367267 <br>United Taxis - 01233 666999 </p>
     </div>
 
     <div class="list">
-        <h3 id="where">Where to Stay</h3>
+        <h2 id="where">Where to Stay</h2>
         <p>LOCAL ACCOMMODATION: <br>
         <a href="#">The Wife of Bath, Wye</a><br>
         <a href="#">Ashford International Hotel, Ashford</a><br>
@@ -288,7 +289,7 @@
     </div>
 
     <div class="list">
-            <h3 id="add">Additional venue info</h3>
+            <h2 id="add">Additional venue info</h2>
             <ul>
                 <li>• Most of the terrain at Secret Garden is cobble and gravel - bear in mind when choosing shoes!</li>
                 <li>• Cars can be left in the main cark park overnight and can be picked up from 7:30am onwards the following day. The main gate to the venue is locked from midnight to 7am.</li>
@@ -316,14 +317,13 @@
         <img id="food"  name="theader" src="resources/food.png">
         <p>If you are a day guest, we will ask you for your menu choices when you RSVP. <br><br> Evening food Cake sugar plum jelly beans pie dragée marzipan. Chocolate bar wafer carrot cake muffin cake liquorice sesame snaps sugar plum. Marzipan donut cheesecake apple pie toffee lemon drops wafer muffin caramels.</p>
     </div>
-    
+
         <img id="mobileline" src="resources/mobileline.png">
         <img id="desktopline" src="resources/line.png">
     <div class="list">
         <img id="gifts" src="resources/gifts.png">
         <p>We are not asking our guests for gifts - having you as part of our day is enough. However, if you would like to contribute to our honeymoon fund.. (add bank details to site?)</p>
     </div>
-    
 
 </div></div>
 <br><br><br>

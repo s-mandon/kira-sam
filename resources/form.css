@@ -17,7 +17,6 @@ p.respond {
 {
 	position: relative;
 	display:inline-block; 
-	padding-bottom: 30px;
 	left: 0;
 }
 
@@ -29,6 +28,7 @@ p.respond {
 	margin: 0 auto;
 	width: 223px;
 	height: 68px;
+	margin-bottom: 40px;
 	
 }
 
