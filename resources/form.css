@@ -88,7 +88,7 @@ p.respond {
 }
 
 .form-control {
-	width: 303px;
+	width: 300px;
 	height: 38px;
 	border-radius: 3px;
 	border: solid 1px #707070;
@@ -206,20 +206,21 @@ body.modal-open {
 
 .modal-container {
 	width: 380px;
-	background: #277752;
+	background: transparent;
 	border-radius: 5px;
 }
 
 .modal-header {
-	background: #277752;
+	background: transparent;
 	color: #fff;
 	font-size: 26px;
 	margin: 0 auto;
-	width: 370px;
+	width: 400px;
 	border: none;
 }
 
 .close {
+	display: block;
 	color: #fff;
 	width: 100px;
 	opacity: 1;

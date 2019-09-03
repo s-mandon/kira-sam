@@ -1,7 +1,7 @@
 
 
 
-deadline = 'June 20 2020 00:00:00 GMT+1';
+deadline = 'June 20 2020 12:00:00 GMT+1';
 function time_remaining(endtime){
   var t = Date.parse(endtime) - Date.parse(new Date());
   var minutes = Math.floor( (t/1000/60) % 60 );

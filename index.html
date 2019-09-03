@@ -37,7 +37,7 @@
                                 <button type="button" class="close" data-dismiss="modal">✖</button>
                             </div>
                             <div class="modal-body">
-                                <form role="form" method="post" id="reused_form" >
+                                <form role="form" action="css-popup-contact-form/handler.php" method="get" id="reused_form" >
                                     <p class="respond">Please respond once per individual invited, not per party.<br>
                                     <br> If you have any issues with this form, you can also RSVP by emailing samkiramj@gmail.com ♥</p>
                                     <div class="form-group">
@@ -54,7 +54,7 @@
                                     </div>
                                     <div class="decline">
                                     <input type="radio" value="no" id="decline" name="decaccept" data-toggle="collapse" data-target="#collapseOne">
-                                    <label for="decline"></label>SADLY DECLINE</label>
+                                    <label for="decline">SADLY DECLINE</label>
                                     </div>
                                     <br><br><br>
                                     <div class="collapse show" id="collapseOne">
@@ -77,7 +77,7 @@
                                         </div>
                                     </div>
                                         <div class="subbut">
-                                    <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">SUBMIT</button>
+                                    <button type="submit" name="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs" value="submit">SUBMIT</button>
                                         </div>
                                     </div>
                                 </div>
@@ -99,61 +99,6 @@
         <div class="container-box-2" id="mob-but-container">
                 <button type="button" id="mob-button" class="btn-2 btn-info-2 btn-lg turned-button" data-toggle="modal" data-target="#myModal">RSVP</button>
             </div>
-            <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            RSVP
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form role="form" method="post" id="reused_form" >
-                                <p> Please respond once per individual invited, not per party. <br>
-                                If you have any issues with this form, you can also RSVP by emailing samkiramj@gmail.com </p>
-                                <div class="form-group">
-                                    <label for="name"> NAME:</label>
-                                    <input type="text" class="form-control" id="name" name="name" required maxlength="50">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email"> EMAIL:</label>
-                                    <input type="email" class="form-control" id="email" name="email" required maxlength="50">
-                                </div>
-                                <div class="form-group">
-                                    <input type="radio" id="accept" name="decaccept" checked>
-                                <label for="accept">HAPPILY ACCEPT</label>
-                                </div>
-                                <div class="form-group">
-                                <input type="radio" id="decline" name="decaccept">
-                                <label for="accept">SADLY DECLINE</label>
-                                </div>
-                                <h4>WOULD YOU LIKE A +1?</h4>
-                                <p>We can't guarantee +1s, but let us know if you'd like one and we'll let you know
-                                     once we've had all our RSVPs.
-                                </p>
-                                <div class="form-group">
-                                    <input type="checkbox" id="oneyes" name="oneyes"
-                                           checked>
-                                    <label class="oneyes" for="oneyes">YES PLEASE</label>
-                                  </div>
-
-                                <div class="form-group">
-                                    <label for="name">ANY DIETARY REQUIREMENTS?</label>
-                                    <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Vegetarian, vegan, gluten free, any allergies or intolerances?" maxlength="6000" rows="7"></textarea>
-                                </div>
-                                <div class="form-group">
-                                        <label for="name">ADD A SONG TO OUR PLAYLIST</label>
-                                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Or more than one if you can't decide!" maxlength="6000" rows="7"></textarea>
-                                    </div>
-                                <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! &rarr;</button>
-                            </div>
-                            </form>
-                            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
-                            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
-                        </div>
-                    </div>
-                </div>
     <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
@@ -196,62 +141,6 @@
                 <button type="button" class="btn rsvp2 btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">RSVP</button>
             </div>
             <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            RSVP
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form role="form" method="post" id="reused_form" >
-                                <p> Please respond once per individual invited, not per party. <br>
-                                If you have any issues with this form, you can also RSVP by emailing samkiramj@gmail.com </p>
-                                <div class="form-group">
-                                    <label for="name"> NAME:</label>
-                                    <input type="text" class="form-control" id="name" name="name" required maxlength="50">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email"> EMAIL:</label>
-                                    <input type="email" class="form-control" id="email" name="email" required maxlength="50">
-                                </div>
-                                <div class="form-group">
-                                    <input type="radio" id="accept" name="decaccept" checked>
-                                <label for="accept">HAPPILY ACCEPT</label>
-                                </div>
-                                <div class="form-group">
-                                <input type="radio" id="decline" name="decaccept">
-                                <label for="accept">SADLY DECLINE</label>
-                                </div>
-                                <h3>WOULD YOU LIKE A +1?</h3>
-                                <p>We can't guarantee +1s, but let us know if you'd like one and we'll let you know
-                                     once we've had all our RSVPs.
-                                </p>
-                                <div class="form-group">
-                                    <input type="checkbox" id="oneyes" name="oneyes"
-                                           checked>
-                                    <label for="oneyes">YES PLEASE</label>
-                                  </div>
-
-                                <div class="form-group">
-                                    <h3>ANY DIETARY REQUIREMENTS?</h3>
-                                    <label for="name"> Message:</label>
-                                    <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Vegetatian, vegan, gluten free, any allergies or intolerances?" maxlength="6000" rows="7"></textarea>
-                                </div>
-                                <div class="form-group">
-                                        <h3>ADD A SONG TO OUR PLAYLIST</h3>
-                                        <label for="name"> Message:</label>
-                                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Or more than one if you can't decide!" maxlength="6000" rows="7"></textarea>
-                                    </div>
-                                <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">SUBMIT</button>
-                            </div>
-                            </form>
-                            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
-                            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
