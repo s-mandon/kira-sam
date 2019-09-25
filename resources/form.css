@@ -1,25 +1,38 @@
 
-h3 {
+form h3 {
 	color: #fff;
 	font-size: 18px;
 	padding: 10px 0px 0px 0px;
 }
 
-.plus {
-	font-size: 14px;
+form h2 {
+	color: #fff;
+	padding: 0;
+	font-size: 18px;
 }
 
-p.respond {
-	padding-bottom: 20px;
+.modal-body {
+	display: flex;
+	flex-direction: column;
 }
 
 .container-box
-{
-	position: relative;
+{	position: relative;
 	display:inline-block; 
 	left: 0;
 }
 
+.name, .email {
+	display: block;
+	margin-top: 10px;
+}
+
+input[for=name], input[for=email] {
+	width: 300px;
+	height: 35px;
+	border-radius: 5px;
+	box-shadow: none;
+}
 
 .btn {
 	display: inline-block;
@@ -89,63 +102,42 @@ p.respond {
 
 .form-control {
 	width: 300px;
-	height: 38px;
 	border-radius: 3px;
 	border: solid 1px #707070;
+	font-size: 15px;
 }
 
-.form-group {
-	margin-top: 30px;
-}
-
-textarea#message.form-control {
-	width: 303px;
-	height: 82px;
-	font-size: 14px;
-}
-
-
-.accept {
-	position: relative;
-	display: flex;
-	flex-wrap: nowrap;
-	float: left;
-	font-size: 16px;
-	width: 100px;
-	margin-top: 5px;
-	line-height: 1.2;
-}
-
-.decline {
-	position: relative;
-	display: flex;
-	float: right;
-	font-size: 16px;
-	width: 100px;
-	right: 30px;
-	margin: 5px;
-	line-height: 1.2;
-}
-
-label[for=oneyes] {
-	position: relative;
-	display: flex;
-	flex-wrap: nowrap;
-	float: right;
-	font-size: 16px;
-	width: 280px;
-	bottom: 10px;
-	margin-bottom: 20px;
-	line-height: 1.2;
+.top-text {
+	padding-bottom: 20px;
 }
 
 input[type=radio] {
-	display: flex;
-	flex-wrap: nowrap;
-	position: relative;
+	display: inline-block;
 	width: 50px;
 	height: 20px;
 	top: 10px;
+}
+
+label[for=accept] {
+	margin-left: 5px;
+	font-size: 18px;
+	width: 100px;
+	line-height: 1.2;
+}
+
+label[for=decline] {
+	margin-left: 5px;
+	font-size: 18px;
+	width: 100px;
+	line-height: 1.2;
+}
+
+#radiobtns {
+display: flex;
+margin: auto 0;
+width: 300px;
+padding: 20px;
+text-align: center;
 }
 
 input[type=checkbox] {
@@ -157,27 +149,34 @@ input[type=checkbox] {
 	top: 10px;
 }
 
-label[for=accept] {
-	margin-left: 5px;
+label[for=plus1] {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	float: right;
+	font-size: 16px;
+	width: 280px;
+	bottom: 10px;
+	margin-bottom: 20px;
+	line-height: 1.2;
 }
 
-label[for=decline] {
-	margin-left: 5px;
+.p1text {
+	font-size: 16px;
 }
 
 button[type=submit] {
 	background: #277752;
 	border: 1px #fff solid;
+	border-radius: 5px;
 	width: 154px;
 	height: 47px;
 	color: #fff;
 	font-size: 18px;
 }
 
-.subbut {
+.bcontainer {
 	text-align: center;
-	width: 300px;
-	padding: 20px;
 }
 
 button[type=submit]:hover {
@@ -208,6 +207,7 @@ body.modal-open {
 	width: 380px;
 	background: transparent;
 	border-radius: 5px;
+	margin-bottom: 20px;
 }
 
 .modal-header {

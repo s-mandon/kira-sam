@@ -37,60 +37,62 @@
                                 <button type="button" class="close" data-dismiss="modal">✖</button>
                             </div>
                             <div class="modal-body">
-                                <form role="form" action="css-popup-contact-form/handler.php" method="get" id="reused_form" >
-                                    <p class="respond">Please respond once per individual invited, not per party.<br>
-                                    <br> If you have any issues with this form, you can also RSVP by emailing samkiramj@gmail.com ♥</p>
-                                    <div class="form-group">
-                                        <label for="name"> NAME</label>
-                                        <input type="text" class="form-control" id="name" name="name" required maxlength="50">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email"> EMAIL</label>
-                                        <input type="email" class="form-control" id="email" name="email" required maxlength="50">
-                                    </div>
-                                    <div class="accept">
-                                    <input type="radio" value="yes" id="accept" name="decaccept" data-toggle="collapse" data-target="#collapseOne" checked>
-                                    <lable for="accept">HAPPILY ACCEPT</lable>
-                                    </div>
-                                    <div class="decline">
-                                    <input type="radio" value="no" id="decline" name="decaccept" data-toggle="collapse" data-target="#collapseOne">
-                                    <label for="decline">SADLY DECLINE</label>
-                                    </div>
-                                    <br><br><br>
-                                    <div class="collapse show" id="collapseOne">
-                                    <div class="plusone">
-                                    <h3 class="formh3">WOULD YOU LIKE A +1?</h3>
-                                    <p class="plus">We can't guarantee +1s, but let us know if you'd like one and we'll let you know
-                                         once we've had all our RSVPs.
-                                    </p>
-                                        <input type="checkbox" id="oneyes" name="oneyes">
-                                        <label for="oneyes">YES PLEASE</label>
+                                    <p class="top-text">Please respond once per individual invited, not per party.
+                                    <br><br>
+                                    If you have any issues with this form, you can also RSVP by emailing samkiramj@gmail.com ♥</p>
+                                <form id="contact" action="/css-popup-contact-form/handler.php" method="post">
+                                     <div>
+                                        <label for="name" class="name">NAME</label>
+                                      <input for="name" class="name" id="name" name="name" placeholder="" type="text" tabindex="1" required autofocus>
                                       </div>
-
+                                      <div>
+                                      <label for="email" class="email">EMAIL</label>
+                                      <input for="email" id="email" name="email" class="email" placeholder="" type="text" tabindex="1" required autofocus>
+                                      </div>
+                                      <div class="form-group" id="radiobtns">
+                                          <div class="acceptbtn">
+                                          <input type="radio" class="accept" value="accept" id="accept" name="deccept" data-toggle="collapse" data-target="#collapseOne"
+                                                 checked>
+                                          <label for="accept" class="accept">HAPPILY ACCEPT</label>
+                                          </div>
+                                          <div>
+                                          <input type="radio" value="decline" class="decline" id="decline" name="deccept" data-toggle="collapse" data-target="#collapseOne">
+                                          <label for="decline" class="decline">SADLY DECLINE</label>
+                                          </div>
+                                      </div>
+                                      <div class="collapse show" id="collapseOne">
+                                          <div class="form-group">
+                                     <h2>Would you like a +1?</h2>
+                                     <p class="p1text">We can't guarantee +1s, but let us know if you'd like one and we'll let you know once we've had all our RSVPs.</p>
+                                     <div>
+                                      <input type="checkbox" id="plus1" name="plus1"
+                                             checked>
+                                      <label for="plus1">YES PLEASE</label>
+                                    </div>
+                                    </div>
                                     <div class="form-group">
                                         <label for="name">ANY DIETARY REQUIREMENTS?</label>
-                                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Vegetarian, vegan, gluten free, any allergies or intolerances?" maxlength="6000" rows="7"></textarea>
+                                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Vegetarian, vegan, gluten free, any allergies or intolerances?" maxlength="6000"></textarea>
                                     </div>
                                     <div class="form-group">
-                                            <label for="name">ADD A SONG TO OUR PLAYLIST!</label>
-                                            <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Or more than one if you can't decide!" maxlength="6000" rows="7"></textarea>
+                                        <label for="name">ADD A SONG TO OUR PLAYLIST!</label>
+                                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Or more than one if you can't decide!" maxlength="6000"></textarea>
                                         </div>
                                     </div>
-                                        <div class="subbut">
-                                    <button type="submit" name="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs" value="submit">SUBMIT</button>
-                                        </div>
-                                    </div>
+                                      <div class="bcontainer"><button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
+                                      </div>
+                                  </form>
                                 </div>
-                            </div>
-
-                                </form>
                                 <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
                                 <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                            </div>
+                            </div>
                             </div>
                         </div>
         <a href="#food" id="nav">Food</a>
         <a href="#gifts" id="nav">Gifts</a>
     </div>
+</div>
 </div>
     </nav>
 
@@ -221,7 +223,7 @@
     <div class="list">
         <br id="giftsa">
         <img id="gifts" class="theader giftstext" src="resources/gifts.png">
-        <p>We are not asking our guests for gifts - having you as a part of our day is enough. However, if you would like to contribute to our honeymoon to Mexico, we have an account set up with Destinology. Visit <a href="https://www.destinology.co.uk/HoneymoonAccount/Default.aspx?ReturnUrl=%2fhoneymoonaccount%3ffbclid%3dIwAR1rrA_YvUHebKMRqUTNRs2kafTqwtyL1gf4NOe_8aWzTMU5TclHdzHg2fQ&fbclid=IwAR1rrA_YvUHebKMRqUTNRs2kafTqwtyL1gf4NOe_8aWzTMU5TclHdzHg2fQ" target="_blank">destinology.co.uk/honeymoonaccount</a> quoting <b>432710</b> as the booking reference and <b>Jones</b> or <b>Mandon Gassman</b> as the customer surname.</p>
+        <p>We are not asking our guests for gifts - having you as a part of our day is enough. However, if you would like to contribute to our honeymoon to Mexico, we have an account set up with Destinology. Visit <a href="https://www.destinology.co.uk/HoneymoonAccount/Default.aspx?ReturnUrl=%2fhoneymoonaccount%3ffbclid%3dIwAR1rrA_YvUHebKMRqUTNRs2kafTqwtyL1gf4NOe_8aWzTMU5TclHdzHg2fQ&fbclid=IwAR1rrA_YvUHebKMRqUTNRs2kafTqwtyL1gf4NOe_8aWzTMU5TclHdzHg2fQ" target="_blank">destinology.co.uk/honeymoonaccount</a> quoting <b>72jDVA1C5H</b> as the account ID and <b>Jones</b> or <b>Mandon Gassman</b> as the customer surname.</p>
     </div>
 
 </div></div>
