@@ -1,0 +1,34 @@
+body {
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+}
+
+h1 {
+    color: #fff;
+}
+
+a {
+    color: #EFBE5E;
+    text-decoration: underline;
+    }
+
+    img {
+        max-width: 130px;
+    }
+
+    .image-container {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+.container {
+    top: 35px;
+    width: 375px;
+    height: 445px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #277752 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}

@@ -40,23 +40,26 @@
                                     <p class="top-text">Please respond once per individual invited, not per party.
                                     <br><br>
                                     If you have any issues with this form, you can also RSVP by emailing samkiramj@gmail.com ♥</p>
-                                <form id="contact" action="/css-popup-contact-form/handler.php" method="post">
+                                <form id="RSVP" action="css-popup-contact-form/handler.php" method="post">
                                      <div>
-                                        <label for="name" class="name">NAME</label>
-                                      <input for="name" class="name" id="name" name="name" placeholder="" type="text" tabindex="1" required autofocus>
+                                        <label for="fname" class="fname">FIRST NAME</label>
+                                      <input for="fname" class="fname" id="fname" name="fname" placeholder="" type="text" tabindex="1" required autofocus>
                                       </div>
+                                      <div>
+                                        <label for="lname" class="lname">SURNAME</label>
+                                        <input for="lname" class="lname" id="lname" name="lname" placeholder="" type="text" tabindex="1" required autofocus>
+                                        </div>
                                       <div>
                                       <label for="email" class="email">EMAIL</label>
                                       <input for="email" id="email" name="email" class="email" placeholder="" type="text" tabindex="1" required autofocus>
                                       </div>
                                       <div class="form-group" id="radiobtns">
                                           <div class="acceptbtn">
-                                          <input type="radio" class="accept" value="accept" id="accept" name="deccept" data-toggle="collapse" data-target="#collapseOne"
-                                                 checked>
+                                          <input type="checkbox" class="accept" value="accept" id="accept" name="accept">
                                           <label for="accept" class="accept">HAPPILY ACCEPT</label>
                                           </div>
                                           <div>
-                                          <input type="radio" value="decline" class="decline" id="decline" name="deccept" data-toggle="collapse" data-target="#collapseOne">
+                                          <input type="checkbox" value="decline" class="decline" id="decline" name="decline" data-toggle="collapse" data-target="#collapseOne">
                                           <label for="decline" class="decline">SADLY DECLINE</label>
                                           </div>
                                       </div>
@@ -64,19 +67,18 @@
                                           <div class="form-group">
                                      <h2>Would you like a +1?</h2>
                                      <p class="p1text">We can't guarantee +1s, but let us know if you'd like one and we'll let you know once we've had all our RSVPs.</p>
-                                     <div>
-                                      <input type="checkbox" id="plus1" name="plus1"
-                                             checked>
+                                     <div class="hide">
+                                      <input type="checkbox" id="plus1" name="plus1" value="yes">
                                       <label for="plus1">YES PLEASE</label>
                                     </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="name">ANY DIETARY REQUIREMENTS?</label>
-                                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Vegetarian, vegan, gluten free, any allergies or intolerances?" maxlength="6000"></textarea>
+                                        <textarea class="form-control" type="textarea" name="diet" id="diet" placeholder="Vegetarian, vegan, gluten free, any allergies or intolerances?" maxlength="6000"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="name">ADD A SONG TO OUR PLAYLIST!</label>
-                                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Or more than one if you can't decide!" maxlength="6000"></textarea>
+                                        <textarea class="form-control" type="textarea" name="song" id="song" placeholder="Or more than one if you can't decide!" maxlength="6000"></textarea>
                                         </div>
                                     </div>
                                       <div class="bcontainer"><button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>

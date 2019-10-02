@@ -9,6 +9,7 @@ form h2 {
 	color: #fff;
 	padding: 0;
 	font-size: 18px;
+	padding-top: 20px;
 }
 
 .modal-body {
@@ -22,12 +23,12 @@ form h2 {
 	left: 0;
 }
 
-.name, .email {
+.fname, .lname {
 	display: block;
-	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-input[for=name], input[for=email] {
+input[for=fname], input[for=lname], input[for=email] {
 	width: 300px;
 	height: 35px;
 	border-radius: 5px;
@@ -102,6 +103,7 @@ input[for=name], input[for=email] {
 
 .form-control {
 	width: 300px;
+	min-height: 100px;
 	border-radius: 3px;
 	border: solid 1px #707070;
 	font-size: 15px;
@@ -111,42 +113,38 @@ input[for=name], input[for=email] {
 	padding-bottom: 20px;
 }
 
-input[type=radio] {
+label[for=accept] {
 	display: inline-block;
-	width: 50px;
-	height: 20px;
-	top: 10px;
+	width: 150px;
+	padding-left: 35px;
+	line-height: 18px;
 }
 
-label[for=accept] {
-	margin-left: 5px;
-	font-size: 18px;
-	width: 100px;
-	line-height: 1.2;
+#decline, #accept {
+	top: 33px
 }
 
 label[for=decline] {
-	margin-left: 5px;
-	font-size: 18px;
-	width: 100px;
-	line-height: 1.2;
+	display: inline-block;
+	width: 140px;
+	padding-left: 35px;
+	line-height: 18px;
 }
 
 #radiobtns {
 display: flex;
 margin: auto 0;
-width: 300px;
-padding: 20px;
-text-align: center;
+text-align: left;
+align-items: center;
 }
 
 input[type=checkbox] {
-	display: flex;
+	display: block;
 	flex-wrap: nowrap;
 	position: relative;
-	width: 20px;
-	height: 20px;
-	top: 10px;
+	width: 30px;
+	height: 30px;
+	top: 15px;
 }
 
 label[for=plus1] {
@@ -154,25 +152,28 @@ label[for=plus1] {
 	display: flex;
 	flex-wrap: nowrap;
 	float: right;
-	font-size: 16px;
-	width: 280px;
+	font-size: 18px;
+	width: 275px;
 	bottom: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	line-height: 1.2;
 }
 
 .p1text {
-	font-size: 16px;
+	font-size: 15px;
 }
 
 button[type=submit] {
 	background: #277752;
 	border: 1px #fff solid;
 	border-radius: 5px;
+	text-transform: uppercase;
 	width: 154px;
+	margin-top: 30px;
 	height: 47px;
 	color: #fff;
 	font-size: 18px;
+	transition: background 0.2s linear;
 }
 
 .bcontainer {
@@ -181,10 +182,6 @@ button[type=submit] {
 
 button[type=submit]:hover {
 	background-color: #EFBE5E;
-}
-
-p.plus {
-	padding: 0;
 }
 
 .modal-content {
@@ -246,10 +243,6 @@ body.modal-open {
 
 .modal-body::-webkit-scrollbar {
 		width: 5px;
-	}
-	 
-.modal-body::-webkit-scrollbar-track {
-		
 	}
 	 
 .modal-body::-webkit-scrollbar-thumb {
